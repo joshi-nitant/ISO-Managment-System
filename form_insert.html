@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Insert</title>
+    </head>
+    <body>
+        <form action="choose_form.html" method="POST">
+            <table border="2">
+                <tr>
+                    <td>Document Number</td>
+                    <td><input type="number" name="document_no"></td>
+                </tr>
+                <tr>
+                    <td>Document Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Institute</td>
+                    <td>
+                        <select name="institute">
+                          <option>Faculty of Technology</option>
+                          <option>Faculty of Pharama</option>
+                          <option>Faculty of Dental Science</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>
+                        <select name="department">
+                          <option>IT</option>
+                          <option>Computer</option>
+                          <option>Mechanical</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td>
+                        <select name="subject">
+                          <option>OS</option>
+                          <option>MFP</option>
+                          <option>DBMS</option>
+                          <option>AT</option>
+                        </select>
+                    </td>
+                </tr>
+                  <tr>
+                    <td>Type</td>
+                    <td>
+                        <select name="type">
+                          <option>Lab</option>
+                          <option>Lecture</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Starting Teaching Plan</td>
+                <td><input type="date" name="starting_plan"></td>
+                </tr>
+                <tr>
+                    <td>Ending Teaching Plan</td>
+                    <td><input type="date" name="ending_plan"></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <input type="submit" value="Insert">
+        </form>
+    </body>
+</html>
