@@ -1,73 +1,105 @@
 
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Insert</title>
-    </head>
-    <body>
-        <form>
-            <table border="2">
-                <tr>
-                    <td>Document Number</td>
-                    <td><input type="number" name="document_no"></td>
-                </tr>
-                <tr>
-                    <td>Document Name</td>
-                    <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                    <td>Institute</td>
-                    <td>
-                        <select name="institute">
-                          <option>Faculty of Technology</option>
-                          <option>Faculty of Pharama</option>
-                          <option>Faculty of Dental Science</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Department</td>
-                    <td>
-                        <select name="department">
-                          <option>IT</option>
-                          <option>Computer</option>
-                          <option>Mechanical</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Subject</td>
-                    <td>
-                        <select name="subject">
-                          <option>OS</option>
-                          <option>MFP</option>
-                          <option>DBMS</option>
-                          <option>AT</option>
-                        </select>
-                    </td>
-                </tr>
-                  <tr>
-                    <td>Type</td>
-                    <td>
-                        <select name="type">
-                          <option>Lab</option>
-                          <option>Lecture</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Starting Teaching Plan</td>
-                <td><input type="date" name="starting_plan"></td>
-                </tr>
-                <tr>
-                    <td>Ending Teaching Plan</td>
-                    <td><input type="date" name="ending_plan"></td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <a href="choose_form.html">Insert</a>
-        </form>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v9 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="fonts/linearicons/style.css">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+	</head>
+
+	<body style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+
+        <div id="navbar">
+            <a href="form_view.html">View Form</a>
+            <a href="lecform.html">Lecture Form</a>
+            <a href="labform.html">Lab Form</a>
+          </div>
+
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="form_view.html">
+					<h3>Insert Form</h3>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Document Name *</label>
+							<input type="text" class="form-control" placeholder="Your Name">
+						</div>
+						<div class="form-wrapper">
+							<label for="">Document Number*</label>
+							<input type="number" class="form-control" placeholder="Phone">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Start Teaching Date</label>
+							<span class="lnr lnr-calendar-full"></span>
+							<input type="date" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1">
+						</div>
+						<div class="form-wrapper">
+							<label for="">End Teaching Date</label>
+							<span class="lnr lnr-calendar-full"></span>
+							<input type="date" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2">
+						</div>
+					</div>
+					<div class="form-row last">
+						<div class="form-wrapper">
+							<label for="">Institute</label>
+							<select name="" id="" class="form-control">
+								<option value="1">Faculty Of Technology</option>
+								<option value="2">Faculty Of Pharma</option>
+								<option value="3">Faculty Of Detl Science</option>
+
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Department</label>
+							<select name="" id="" class="form-control">
+								<option value="1">IT</option>
+								<option value="2">CE</option>
+								<option value="3">ME</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+
+					<div class="form-row last">
+						<div class="form-wrapper">
+							<label for="">Subject</label>
+							<select name="" id="" class="form-control">
+								<option value="1">WDDN</option>
+								<option value="2">OS</option>
+								<option value="3">AT</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Type</label>
+							<select name="" id="" class="form-control">
+								<option value="1">Lab</option>
+								<option value="2">Lecture</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+
+					<button data-text="Insert" type="submit">
+						<span>Insert</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
