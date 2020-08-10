@@ -1,13 +1,21 @@
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
         <title>Insert</title>
     </head>
     <body>
+
+        <div id="navbar">
+            <a href="form_view.html">View Form</a>
+            <a href="lecform.html">Lecture Form</a>
+            <a href="labform.html">Lab Form</a>
+          </div>
+
         <form>
-            <table border="2">
+            <table border="2" align="center">
                 <tr>
                     <td>Document Number</td>
                     <td><input type="number" name="document_no"></td>
@@ -70,4 +78,112 @@
             <a href="choose_form.html">Insert</a>
         </form>
     </body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v9 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="fonts/linearicons/style.css">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- DATE-PICKER -->
+		<!--<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">-->
+		
+		<!-- STYLE CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+	</head>
+
+	<body style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+
+        <div id="navbar">
+            <a href="form_view.html">View Form</a>
+            <a href="lecform.html">Lecture Form</a>
+            <a href="labform.html">Lab Form</a>
+          </div>
+
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="form_view.html">
+					<h3>Insert Form</h3>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Document Name *</label>
+							<input type="text" class="form-control" placeholder="Your Name">
+						</div>
+						<div class="form-wrapper">
+							<label for="">Document Number*</label>
+							<input type="number" class="form-control" placeholder="Phone">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Start Teaching Date</label>
+							<span class="lnr lnr-calendar-full"></span>
+							<input type="date" class="form-control datepicker-here" data-language='en' data-date-format="dd M yyyy" id="dp1">
+						</div>
+						<div class="form-wrapper">
+							<label for="">End Teaching Date</label>
+							<span class="lnr lnr-calendar-full"></span>
+							<input type="date" class="form-control datepicker-here" data-language='en'  data-date-format="dd M yyyy" id="dp2">
+						</div>
+					</div>
+					<div class="form-row last">
+						<div class="form-wrapper">
+							<label for="">Institute</label>
+							<select name="" id="" class="form-control">
+								<option value="1">Faculty Of Technology</option>
+								<option value="2">Faculty Of Pharma</option>
+								<option value="3">Faculty Of Detl Science</option>
+								
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Department</label>
+							<select name="" id="" class="form-control">
+								<option value="1">IT</option>
+								<option value="2">CE</option>
+								<option value="3">ME</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+
+					<div class="form-row last">
+						<div class="form-wrapper">
+							<label for="">Subject</label>
+							<select name="" id="" class="form-control">
+								<option value="1">WDDN</option>
+								<option value="2">OS</option>
+								<option value="3">AT</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Type</label>
+							<select name="" id="" class="form-control">
+								<option value="1">Lab</option>
+								<option value="2">Lecture</option>
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					
+					<button data-text="Insert" type="submit">
+						<span>Insert</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
