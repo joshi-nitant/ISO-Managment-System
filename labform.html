@@ -2,6 +2,7 @@
 
 <html>
     <head>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="crossorigin="anonymous"></script>
         <title>Lab planning</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -197,3 +198,11 @@
         </center>
     </body>
 </html>
+<script>
+  $('#myTable').on('click', 'input[type="button"]', function () {
+      $(this).closest('tr').remove();
+  })
+  $('p input[type="button"]').click(function () {
+      $('#myTable').append('<tr><td><input type="number" min="1" name="sequence[]"/></td> <td><textarea name="topics[]"  cols="100" rows="3"></textarea></td><td><input type="text" name="hours[]"/></td><td><input type="button" value="Delete" /></td></tr>')
+  });
+</script>
