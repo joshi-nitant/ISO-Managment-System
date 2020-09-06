@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="crossorigin="anonymous"></script>
         <title>Lab planning</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/header.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+
     </head>
     <body style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
 
-        <div id="navbar">
-            <a href="form_view.html">View Form</a>
-            <a href="lecform.html">Lecture Form</a>
-            <a href="labform.html">Lab Form</a>
-          </div>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary navigationbar" >
+            
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="form_view.html">Form View </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lecform.html">Lecture Form</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="labform.html">Lab Form <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="index.html">
+               
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+              </form>
+            </div>
+          </nav><br><br>
         <center>
             <div>
                 <h4>Dharmsinh Desai University, Nadiad<br>
@@ -46,7 +72,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td>    
                             Subject Name : <input type="text">
                         </td>
                         <td>
@@ -59,7 +85,7 @@
                         </td>
                     </tr>
                 </table>
-
+                
                 <table width="76%">
                 <tr>
                     <td>
@@ -179,7 +205,7 @@
                         </td>
                     </tr>
                 </table>
-
+                
                 <table width="76%">
                     <tr>
                         <td>Remarks (if any): <input type="text"></td>
@@ -195,14 +221,37 @@
                     </tr>
                 </table>
             </div>
-        </center>
+        </center><br><br>
     </body>
+
+    <footer class="footer-area footer--light">
+  
+        <div class="mini-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="copyright-text">
+                  <p>© 2020
+                     All rights reserved. Created by
+                    <a href="#">Nitant Joshi</a>
+                  </p>
+                </div>
+
+                <div class="copyright-text">
+                  
+                   
+					<a href="https://www.linkedin.com/in/nitant-joshi-2380721a5"><img src="images/icons8-linkedin-circled-96.png" style="width: 50px; height: 50px;"></a>
+					<a href="mailto:nitantjoshi20@gmail.com"><img src="images/icons8-important-mail-48.png"></a>
+					<a href="http://github.com/joshi-nitant"><img src="images/icons8-github-48.png"></a>
+                  
+                </div>
+      
+                <div class="go_top">
+                  <span class="icon-arrow-up"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 </html>
-<script>
-  $('#myTable').on('click', 'input[type="button"]', function () {
-      $(this).closest('tr').remove();
-  })
-  $('p input[type="button"]').click(function () {
-      $('#myTable').append('<tr><td><input type="number" min="1" name="sequence[]"/></td> <td><textarea name="topics[]"  cols="100" rows="3"></textarea></td><td><input type="text" name="hours[]"/></td><td><input type="button" value="Delete" /></td></tr>')
-  });
-</script>

@@ -14,6 +14,8 @@ div.table-title {
   max-width: 600px;
   padding:5px;
   width: 100%;
+  
+  
 }
 
 .table-title h3 {
@@ -24,6 +26,7 @@ div.table-title {
    font-family: "Roboto", helvetica, arial, sans-serif;
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;
+   
 }
 
 
@@ -44,15 +47,16 @@ div.table-title {
  
 th {
   color:#D5DDE5;;
-  background:#1b1e24;
+  background:#3e91f7;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
   font-size:23px;
   font-weight: 100;
-  padding:24px;
+  padding:10px;
   text-align:left;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   vertical-align:middle;
+ 
 }
 
 th:first-child {
@@ -105,7 +109,7 @@ tr:last-child td:last-child {
  
 td {
   background:#FFFFFF;
-  padding:20px;
+  padding:8px;
   text-align:left;
   vertical-align:middle;
   font-weight:300;

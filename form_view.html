@@ -4,32 +4,55 @@
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/table.css">
         <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
-<<<<<<< HEAD
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(document).on("click","#link",function(){
             confirm("Are you sure want to delete ? ");
             });
         </script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         
-=======
->>>>>>> cfa016d1d0ae2ab91567f71a32a161a135af4da5
         <title>Form</title>
     </head>
     <body style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
 
-        <div id="navbar">
+        <!--<div id="navbar">
             <a href="form_view.html">View Form</a>
             <a href="lecform.html">Lecture Form</a>
             <a href="labform.html">Lab Form</a>
-          </div>
+          </div>-->
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-primary navigationbar" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="form_view.html">Form View <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lecform.html">Lecture Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="labform.html">Lab Form</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="index.html">
+               
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+              </form>
+            </div>
+          </nav>
+
+
         <div class="class="fl-table">
 
-<<<<<<< HEAD
         
-=======
-
->>>>>>> cfa016d1d0ae2ab91567f71a32a161a135af4da5
         <table border="1" align="center">
             <tr>
                 <th>Document No</th>
@@ -46,8 +69,8 @@
                      <td>Lecture</td>
                      <td>12/07/2020</td>
                      <td>12/04/2021</td>
-                     <td><a href="form_insert.html">Update</a></td>
-                     <td><a href="#"id="link">Delete</a></td>
+                     <td><a href="form_insert.html"><img src="images/icons8-edit-48 (3).png" style="width: 30px; height: 30px; "></img></a></td>
+                     <td><a href="#"id="link"><img src="images/icons8-delete-bin-48.png" style="width: 30px; height: 30px; "></img></a></td>
                  </tr>
                  <tr>
                    <td>180</td>
@@ -55,34 +78,54 @@
                    <td>Lecture</td>
                    <td>20/06/2020</td>
                    <td>15/011/2020</td>
-                   <td><a href="form_insert.html">Update</a></td>
-                   <td><a href="#"id="link">Delete</a></td>
+                   <td><a href="form_insert.html"><img src="images/icons8-edit-48 (3).png" style="width: 30px; height: 30px; "></img></a></td>
+                   <td><a href="#"id="link"><img src="images/icons8-delete-bin-48.png" style="width: 30px; height: 30px; "></img></a></td>
                  </tr>
                  <tr>
-                     <<td>180</td>
+                     <td>180</td>
                      <td>Lecutre Form for DBMS</td>
                      <td>Lecture</td>
                      <td>1/04/2020</td>
                      <td>7/04/2020</td>
-                     <td><a href="form_insert.html">Update</a></td>
-<<<<<<< HEAD
-                     <td><a href="#" id="link">Delete</a></td>
+                     <td><a href="form_insert.html"><img src="images/icons8-edit-48 (3).png" style="width: 30px; height: 30px; "></img></a></td>
+                     <td><a href="#" id="link"><img src="images/icons8-delete-bin-48.png" style="width: 30px; height: 30px; "></img></a></td>
                  </tr>
 
-                </div>     
+                </div><br><br>     
         <table>
             <br><br>
             <div class="button_cont" align="center"><a class="example_a" href="form_insert.html" target="_blank" rel="nofollow noopener">Add New Form</a></div>
-           
-=======
-                     <td><a href="#">Delete</a></td>
-                 </tr>
+        
+        </body>
+        
+        <footer class="footer-area footer--light" style="position: absolute; bottom:0; width:100%">
+  
+          <div class="mini-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="copyright-text">
+                    <p>© 2020
+                       All rights reserved. Created by
+                      <a href="#">Nitant Joshi</a>
+                    </p>
+                  </div>
 
+                  <div class="copyright-text">
+                    
+                      
+					<a href="https://www.linkedin.com/in/nitant-joshi-2380721a5"><img src="images/icons8-linkedin-circled-96.png" style="width: 50px; height: 50px;"></a>
+					<a href="mailto:nitantjoshi20@gmail.com"><img src="images/icons8-important-mail-48.png"></a>
+					<a href="http://github.com/joshi-nitant"><img src="images/icons8-github-48.png"></a>
+                  </div>
+        
+                  <div class="go_top">
+                    <span class="icon-arrow-up"></span>
+                  </div>
                 </div>
-        <table>
-            <br><br>
-            <div class="button_cont" align="center"><a class="example_a" href="form_insert.html" target="_blank" rel="nofollow noopener">Add New Form</a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
 
->>>>>>> cfa016d1d0ae2ab91567f71a32a161a135af4da5
-    </body>
 </html>
